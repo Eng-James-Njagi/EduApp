@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- 🔹 Top Navigation Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical|top"
+        android:padding="8dp">
+
+        <!-- Menu Icon -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:color="#A87EE6"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical" />
+
+        <!-- Log In | Sign Up -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In | Sign up"
+            android:textColor="#A87EE6"
+            android:textSize="18sp"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <!-- Profile Icon -->
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@android:drawable/ic_menu_myplaces"
+            android:color="#A87EE6"
+            android:layout_weight="1"
+            android:layout_gravity="end" />
+    </LinearLayout>
+
+    <!-- 🔹 Greeting Text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hi  How Can I\nHelp you"
+        android:textSize="22sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        android:layout_marginBottom="40dp" />
+
+    <!-- 🔹 Search Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp"
+        android:backgroundTintMode="src_in"
+        android:clipToOutline="true"
+        android:backgroundTint="#E0C9F8"
+        android:layout_margin="12dp"
+        android:layoutDirection="ltr"
+        android:elevation="4dp"
+        android:background="@drawable/search_bg">
+
+        <!-- Left Menu Icon -->
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            android:color="@color/purple"
+            android:layout_marginEnd="12dp" />
+
+        <!-- Search Hint Text -->
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="What is economics"
+            android:background="@android:color/transparent"
+            android:textColorHint="#A87EE6"
+            android:textColor="#000000"
+            android:padding="0dp" />
+
+        <!-- Search Icon -->
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@android:drawable/ic_menu_search"
+            android:color="#A87EE6"
+            android:layout_marginStart="12dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Edu App</string>
+    <string name="hint_search">What is economics</string>
+
 </resources>
