@@ -14,7 +14,9 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center_vertical|top"
-        android:padding="8dp">
+        android:background="@drawable/text_field_input"
+        android:layout_marginTop="22dp"
+        android:padding="18dp">
 
         <!-- Menu Icon -->
         <ImageView
@@ -27,11 +29,14 @@
 
         <!-- Log In | Sign Up -->
         <TextView
+            android:id="@+id/decision"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Log In | Sign up"
+            android:clickable="true"
             android:textColor="#A87EE6"
-            android:textSize="18sp"
+            android:textSize="28sp"
+            android:textStyle="bold"
             android:layout_weight="1"
             android:gravity="center" />
 
@@ -49,18 +54,18 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hi  How Can I\nHelp you"
-        android:textSize="22sp"
+        android:text="Hi  How Can I Help you"
+        android:textSize="40sp"
+        android:textAlignment="center"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:gravity="center"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="40dp" />
+        android:layout_marginTop="200dp"
+        android:layout_marginBottom="50dp" />
 
     <!-- 🔹 Search Bar -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="48dp"
+        android:layout_height="70dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:paddingHorizontal="16dp"
@@ -89,6 +94,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textStyle="italic"
             android:hint="What is economics"
             android:background="@android:color/transparent"
             android:textColorHint="#A87EE6"

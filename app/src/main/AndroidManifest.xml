@@ -13,13 +13,19 @@
         android:theme="@style/Theme.EduApp">
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.EduApp.Splash">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".LogInActivity"
+            android:exported="false" />
+        <activity android:name=".SignUpActivity"
+            android:exported="false"/>
     </application>
 
 </manifest>

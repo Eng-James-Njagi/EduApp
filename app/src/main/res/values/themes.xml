@@ -4,5 +4,19 @@
     <style name="Base.Theme.EduApp" parent="Theme.Material3.Light.NoActionBar">
         <item name="buttonStyle">@style/Widget.Material3.Button</item>
     </style>
+    <style name="Theme.EduApp.Splash" parent="Theme.SplashScreen">
+        <!-- Background color for the splash -->
+        <item name="windowSplashScreenBackground">@color/purple</item>
+
+        <!-- Optional: Icon/logo to display -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_launcher_foreground</item>
+
+        <!-- Optional: duration for the animation -->
+        <item name="windowSplashScreenAnimationDuration">300</item>
+
+        <!-- Keep status bar visible or customize -->
+        <item name="postSplashScreenTheme">@style/Theme.EduApp</item>
+    </style>
+
     <style name="Theme.EduApp" parent="Base.Theme.EduApp" />
 </resources>
