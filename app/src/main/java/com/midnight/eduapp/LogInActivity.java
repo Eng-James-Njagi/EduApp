@@ -2,6 +2,7 @@ package com.midnight.eduapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -22,6 +23,12 @@ public class LogInActivity extends AppCompatActivity {
             Intent signUpIntent = new Intent(LogInActivity.this, SignUpActivity.class);
             startActivity(signUpIntent);
         });
+        ImageView closebtn = findViewById(R.id.closeBtn);
+        closebtn.setOnClickListener(v -> {
+            Intent homebtn = new Intent(LogInActivity.this, MainActivity.class);
+            startActivity(homebtn);
+        });
+
     }
 
 }
