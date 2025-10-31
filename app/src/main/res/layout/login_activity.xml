@@ -16,16 +16,16 @@
             android:id="@+id/relativeLayout"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:minHeight="56dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="38dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginTop="8dp"
-            android:paddingVertical="12dp"
-            android:paddingHorizontal="16dp"
             android:background="@drawable/task_bar_drawable"
-            app:layout_constraintTop_toTopOf="parent"
+            android:minHeight="56dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintTop_toTopOf="parent">
 
             <ImageView
                 android:id="@+id/closeBtn"
@@ -33,8 +33,8 @@
                 android:layout_height="32dp"
                 android:layout_alignParentStart="true"
                 android:layout_centerVertical="true"
-                android:src="@drawable/closebutton_drawable"
-                android:contentDescription="Close button" />
+                android:contentDescription="Close button"
+                android:src="@drawable/closebutton_drawable" />
 
             <TextView
                 android:id="@+id/appName"
