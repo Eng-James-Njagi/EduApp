@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Edu App</string>
     <string name="hint_search">What is economics</string>
-
+    <string name="message">Hi Sign up with us!</string>
+    <string name="login_message">Hey Welcome Back</string>
+    <string name="direction_MessageSignIn">Dont have an Account</string>
+    <string name="direction_MessageLogIn">Have an Account</string>
+    <string name="trademark">Copyright EduApp 2026</string>
 </resources>

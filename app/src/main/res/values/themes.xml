@@ -1,9 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.EduApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
 
+    <!-- Base application theme -->
+    <style name="Base.Theme.EduApp" parent="Theme.Material3.Light.NoActionBar">
+        <item name="buttonStyle">@style/Widget.Material3.Button</item>
     </style>
-
     <style name="Theme.EduApp" parent="Base.Theme.EduApp" />
 </resources>
