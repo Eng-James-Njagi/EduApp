@@ -2,6 +2,7 @@ package com.midnight.eduapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.core.splashscreen.SplashScreen;
 
@@ -15,15 +16,12 @@ public class MainActivity extends AppCompatActivity {
         SplashScreen.installSplashScreen(this);
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.visitor_chat_page);
+        setContentView(R.layout.activity_main);
 
-        Navigation();
-    }
-    private void Navigation(){
-        TextView nav = findViewById(R.id.decision);
-        nav.setOnClickListener(v -> {
-            Intent navDecision = new Intent(MainActivity.this, LogInActivity.class);
-            startActivity(navDecision);
-        });
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, new HomeFragment())
+                    .commit();
+        }
     }
 }

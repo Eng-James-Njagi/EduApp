@@ -34,20 +34,26 @@
             android:layout_height="wrap_content"
             android:text="Log In | Sign up"
             android:clickable="true"
-            android:textColor="#A87EE6"
+            android:focusable="true"
+            android:textColor="@color/white"
+            android:background="@drawable/signup_login_state_selector_drawable"
             android:textSize="28sp"
             android:textStyle="bold"
             android:layout_weight="1"
+            android:padding="10dp"
             android:gravity="center" />
 
         <!-- Profile Icon -->
         <ImageView
-            android:layout_width="24dp"
-            android:layout_height="24dp"
-            android:src="@android:drawable/ic_menu_myplaces"
+            android:id="@+id/closebtn"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/closebutton_drawable"
             android:color="#A87EE6"
             android:layout_weight="1"
-            android:layout_gravity="end" />
+            android:layout_gravity="center_vertical" />
     </LinearLayout>
 
     <!-- 🔹 Greeting Text -->
@@ -65,7 +71,7 @@
     <!-- 🔹 Search Bar -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="80dp"
         android:orientation="horizontal"
         android:gravity="center_vertical"
         android:paddingHorizontal="16dp"
@@ -75,39 +81,34 @@
         android:layout_marginBottom="24dp"
         android:backgroundTintMode="src_in"
         android:clipToOutline="true"
-        android:backgroundTint="#E0C9F8"
+        android:backgroundTint="@color/pale_violet"
         android:layout_margin="12dp"
         android:layoutDirection="ltr"
         android:elevation="4dp"
         android:background="@drawable/search_bg">
 
-        <!-- Left Menu Icon -->
-        <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@android:drawable/ic_menu_sort_by_size"
-            android:color="@color/purple"
-            android:layout_marginEnd="12dp" />
 
         <!-- Search Hint Text -->
         <EditText
+            android:id="@+id/searchEditText"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
-            android:textStyle="italic"
             android:hint="What is economics"
             android:background="@android:color/transparent"
-            android:textColorHint="#A87EE6"
-            android:textColor="#000000"
+            android:textColorHint="@color/purple"
+            android:textColor="@color/black"
             android:padding="0dp" />
 
         <!-- Search Icon -->
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@android:drawable/ic_menu_search"
-            android:color="#A87EE6"
-            android:layout_marginStart="12dp" />
+            android:id="@+id/sendButton"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="12dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/sendbtn" />
     </LinearLayout>
 
 </LinearLayout>
