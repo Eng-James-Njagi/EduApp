@@ -36,7 +36,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_person"
-            android:tint="@color/purple_accent" />
+            app:tint="@color/purple_accent" />
     </LinearLayout>
 
     <!-- Greeting Text -->
@@ -73,7 +73,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_menu"
-            android:tint="@color/purple_accent" />
+            app:tint="@color/purple_accent" />
 
         <TextView
             android:layout_width="0dp"
@@ -89,7 +89,7 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_search"
-            android:tint="@color/purple_accent" />
+            app:tint="@color/purple_accent" />
     </LinearLayout>
 
     <!-- Bottom Navigation Bar -->
@@ -110,7 +110,7 @@
             android:layout_height="28dp"
             android:layout_marginHorizontal="40dp"
             android:src="@drawable/ic_chat"
-            android:tint="@color/purple_accent" />
+            app:tint="@color/purple_accent" />
 
         <ImageView
             android:id="@+id/navMenu"
@@ -118,7 +118,7 @@
             android:layout_height="28dp"
             android:layout_marginHorizontal="40dp"
             android:src="@drawable/ic_menu"
-            android:tint="@color/purple_accent" />
+            app:tint="@color/purple_accent" />
 
         <ImageView
             android:id="@+id/navSettings"
@@ -126,7 +126,7 @@
             android:layout_height="28dp"
             android:layout_marginHorizontal="40dp"
             android:src="@drawable/ic_settings"
-            android:tint="@color/purple_accent" />
+            app:tint="@color/purple_accent" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
