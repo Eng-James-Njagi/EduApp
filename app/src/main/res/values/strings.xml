@@ -6,4 +6,8 @@
     <string name="direction_MessageSignIn">Dont have an Account</string>
     <string name="direction_MessageLogIn">Have an Account</string>
     <string name="trademark">Copyright EduApp 2026</string>
+    <string name="chat_ai_page_title">Chat AI</string>
+    <string name="hello_username">Hello Username</string>
+    <string name="greeting_text">Hi Username,\nHow Can I Help you</string>
+    <string name="search_placeholder">What is economics</string>
 </resources>
