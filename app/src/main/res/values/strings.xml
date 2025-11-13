@@ -10,4 +10,5 @@
     <string name="hello_username">Hello Username</string>
     <string name="greeting_text">Hi Username,\nHow Can I Help you</string>
     <string name="search_placeholder">What is economics</string>
+    <string name="student_name">Student Name</string>
 </resources>

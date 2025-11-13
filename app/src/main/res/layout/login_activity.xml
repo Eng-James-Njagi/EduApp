@@ -146,7 +146,7 @@
 
             <!-- Sign Up Button -->
             <Button
-                android:id="@+id/LogInUser"
+                android:id="@+id/RegisterUser"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:minHeight="50dp"
@@ -171,7 +171,7 @@
                 android:text="Or"
                 android:textSize="28sp"
                 android:textColor="@color/black"
-                app:layout_constraintTop_toBottomOf="@+id/LogInUser"
+                app:layout_constraintTop_toBottomOf="@+id/RegisterUser"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent" />
 

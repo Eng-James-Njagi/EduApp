@@ -37,6 +37,7 @@ dependencies {
     implementation(libs.appcompat)
     implementation(platform(libs.firebase.bom))
     implementation(libs.firebase.analytics)
+    implementation(libs.firebase.auth)
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)

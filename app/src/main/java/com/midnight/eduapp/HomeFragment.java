@@ -1,5 +1,6 @@
 package com.midnight.eduapp;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,6 +15,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+
+import es.dmoral.toasty.Toasty;
 
 public class HomeFragment extends Fragment {
 
@@ -53,8 +56,22 @@ public class HomeFragment extends Fragment {
 
 
         decisionTextView.setOnClickListener(v -> {
-            Intent navDecision = new Intent(getActivity(), LogInActivity.class);
-            startActivity(navDecision);
+            if (getActivity() != null) {
+                Intent navDecision = new Intent(getActivity(), LogInActivity.class);
+                if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                    getActivity().overrideActivityTransition(
+                            Activity.OVERRIDE_TRANSITION_OPEN,
+                            android.R.anim.fade_in,
+                            android.R.anim.fade_out
+                    );
+                }
+
+                startActivity(navDecision);
+                getActivity().finish();
+                if (android.os.Build.VERSION.SDK_INT < android.os.Build.VERSION_CODES.UPSIDE_DOWN_CAKE) {
+                    getActivity().overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+                }
+            }
         });
     }
 
@@ -62,7 +79,7 @@ public class HomeFragment extends Fragment {
         String userMessage = searchEditText.getText().toString().trim();
 
         if (userMessage.isEmpty()) {
-            Toast.makeText(getContext(), "Please enter a message", Toast.LENGTH_SHORT).show();
+            Toasty.warning(this.requireContext(), "Please enter a message to continue", Toast.LENGTH_SHORT).show();
             return;
         }
 

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_chat"
+        android:title="Chat" />
+    <item
+        android:id="@+id/nav_research"
+        android:title="Research" />
+    <item
+        android:id="@+id/nav_flashcards"
+        android:title="FlashCards" />
+    <item
+        android:id="@+id/nav_quizes"
+        android:title="Quizes" />
+    <item
+        android:id="@+id/nav_notes"
+        android:title="Notes" />
+    <item
+        android:id="@+id/nav_summary"
+        android:title="Summary" />
+    <item
+        android:id="@+id/nav_settings"
+        android:title="Settings" />
+    <item
+        android:id="@+id/nav_logOut"
+        android:title="Log Out" />
+
+</menu>
