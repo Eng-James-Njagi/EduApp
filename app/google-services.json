@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "979354915897",
+    "project_id": "eduapp-d5dfd",
+    "storage_bucket": "eduapp-d5dfd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:979354915897:android:13bbfce837484b7910a9e8",
+        "android_client_info": {
+          "package_name": "com.midnight.eduapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxZCaScsOk4uoEA1qHs5tea249tEgly78"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
